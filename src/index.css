@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+
+  /* Editorial Aesthetic Colors */
+  --color-brand-navy: #001229;      /* Ultra deep slate navy */
+  --color-brand-blue: #001D3D;      /* Rich royal navy */
+  --color-brand-gold: #8D7B68;      /* Warm premium taupe/stone */
+  --color-brand-gold-dark: #6F5E4E; /* Dark tone taupe */
+  --color-brand-rust: #E67E22;      /* Vibrant editorial orange accent */
+  --color-brand-rust-light: #FDF6F0; /* Soft warm light sand */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom classy micro glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 30, 54, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Smooth custom scrollbar for luxury feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
