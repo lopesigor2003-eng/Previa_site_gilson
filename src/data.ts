@@ -21,11 +21,12 @@ export const DEVELOPMENTS: Development[] = [
     pdfUrl: 'https://drive.google.com/file/d/1DYYgN2-Wy1zdhaR5I1e7vTqHas8xP7Gz/view?usp=sharing',
     status: 'Lançamento',
     highlightMetric: 'Frente Mar',
-    highlightLabel: 'Exclusividade'
+    highlightLabel: 'Exclusividade',
+    coverImage: 'https://i.postimg.cc/sD0YSmTX/residencial-excl.png'
   },
   {
-    id: 'insisa-sans-andreas',
-    title: 'Insisa - Sans Andreas',
+    id: 'insisa-san-andreas',
+    title: 'Insisa - San Andreas',
     tagline: 'Modernidade e Alto Potencial de Rentabilidade',
     description: 'Arquitetura cosmopolita planejada de modo estratégico para investidores. Infraestrutura completa de segurança e automação residencial, garantindo máxima valorização imobiliária em região com altíssima demanda turística.',
     city: 'Penha',
@@ -38,7 +39,8 @@ export const DEVELOPMENTS: Development[] = [
     pdfUrl: 'https://drive.google.com/file/d/1SSqJksZs47SlJU5KTbm3dxy6j3-3zbgd/view?usp=sharing',
     status: 'Em Obras',
     highlightMetric: 'Alto ROI',
-    highlightLabel: 'Próximo ao Mar'
+    highlightLabel: 'Próximo ao Mar',
+    coverImage: 'https://i.postimg.cc/zXPCW7xx/sa.png'
   },
   {
     id: 'orla-da-barra',
@@ -55,7 +57,8 @@ export const DEVELOPMENTS: Development[] = [
     pdfUrl: 'https://drive.google.com/file/d/1YksjT0CVT_9ppVqMPPvxk1Rir4fRDGS/view?usp=sharing',
     status: 'Pronto para Morar',
     highlightMetric: 'Pronto',
-    highlightLabel: 'Localização Premium'
+    highlightLabel: 'Localização Premium',
+    coverImage: 'https://i.postimg.cc/13npKFdj/orla.png'
   }
 ];
 

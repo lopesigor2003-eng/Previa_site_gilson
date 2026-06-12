@@ -14,6 +14,7 @@ export interface Development {
   status: 'Breve Lançamento' | 'Em Obras' | 'Pronto para Morar' | 'Lançamento';
   highlightMetric?: string;
   highlightLabel?: string;
+  coverImage?: string;
 }
 
 export interface CityInfo {

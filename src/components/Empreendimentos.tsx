@@ -43,13 +43,24 @@ export default function Empreendimentos() {
               
               {/* Card top banner graphic decoration (luxury styling) */}
               <div className="h-48 bg-gradient-to-tr from-brand-navy to-brand-blue relative p-6 flex flex-col justify-between text-white overflow-hidden">
-                {/* Diagonal overlay shading */}
-                <div className="absolute inset-0 bg-black/10 mix-blend-multiply" />
+                {dev.coverImage && (
+                  <img 
+                    src={dev.coverImage} 
+                    alt={dev.title}
+                    referrerPolicy="no-referrer"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out brightness-[0.75] contrast-[1.02]" 
+                    loading="lazy"
+                  />
+                )}
+                {/* Diagonal and gradient overlay shading */}
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/85 via-brand-navy/35 to-black/25 z-0" />
                 
                 {/* Decorative house wireframe icon */}
-                <div className="absolute -right-8 -bottom-8 opacity-10 text-white group-hover:scale-110 transition-transform duration-500">
-                  <Building size={160} />
-                </div>
+                {!dev.coverImage && (
+                  <div className="absolute -right-8 -bottom-8 opacity-10 text-white group-hover:scale-110 transition-transform duration-500 z-0">
+                    <Building size={160} />
+                  </div>
+                )}
 
                 {/* Badges container */}
                 <div className="flex justify-between items-start relative z-10">
