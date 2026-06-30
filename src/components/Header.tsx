@@ -33,6 +33,18 @@ export default function Header() {
     { name: 'Contato', href: '#contato', label: 'Falar com Gilson no WhatsApp' }
   ];
 
+  const handleMobileClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setIsOpen(false);
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+  };
+
   return (
     <header
       id="main-header"
@@ -133,7 +145,7 @@ export default function Header() {
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => handleMobileClick(e, link.href)}
                   aria-label={link.label}
                   className="block text-base font-sans font-medium text-slate-100 hover:text-brand-rust py-2.5 px-3 rounded-lg hover:bg-white/5 transition-all"
                 >
