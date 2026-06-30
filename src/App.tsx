@@ -47,7 +47,7 @@ export default function App() {
         {/* 2. Hero Segment (Premium Presentation) */}
         <Hero />
 
-        {/* 3. About Gilson Luiz Rujanowsky (Profile narrative and educational background) */}
+        {/* 3. About Gilson Luis Rujanowsky (Profile narrative and educational background) */}
         <About />
 
         {/* 4. Strategic Oportunidades Layout (Buying counsel and trust triggers) */}
@@ -89,7 +89,7 @@ export default function App() {
 
             {/* Floating Premium WhatsApp Hotlink */}
             <a
-              href="https://wa.me/5547997321808?text=Olá%20Gilson,%20estou%20navegando%20em%20seu%20portal%20institucional%20e%20gostaria%20de%20iniciar%20uma%20conversa."
+              href="https://wa.me/5547997321808?text=Ol%C3%A1%20Gilson!%20Vim%20pelo%20site%20e%20tenho%20interesse%20em%20um%20im%C3%B3vel%20no%20litoral%20norte%20catarinense.%20Poderiam%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F"
               target="_blank"
               rel="noopener noreferrer"
               title="Fale Conosco no WhatsApp"

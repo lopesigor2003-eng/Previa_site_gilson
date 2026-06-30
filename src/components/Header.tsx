@@ -38,80 +38,82 @@ export default function Header() {
       id="main-header"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'glass-panel shadow-md py-3 border-b border-white/20' 
-          : 'bg-brand-navy/90 md:bg-transparent py-5'
+          ? 'bg-brand-navy/95 shadow-lg py-2 border-b border-white/10 backdrop-blur-md' 
+          : 'bg-brand-navy/95 py-3 md:py-4 border-b border-white/5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col items-center justify-center relative">
           
-          {/* Logo Brand Section */}
-          <a 
-            href="#inicio" 
-            aria-label="Ir para o topo da página do portal de Gilson Rujanowsky"
-            className="flex items-center gap-3 group focus:outline-2 focus:outline-brand-gold focus:outline-offset-4 rounded-md"
-          >
-            <div className="relative h-12 w-auto bg-white/95 rounded px-2.5 py-1.5 shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
-              <img 
-                src="https://i.postimg.cc/25psSkYF/Whats-App-Image-2026-06-11-at-16-11-28.jpg" 
-                alt="Logotipo de Gilson Luiz Rujanowsky Consultoria Imobiliária"
-                className="h-full object-contain"
-                decoding="async"
-              />
-            </div>
-            <div className="hidden md:flex flex-col select-none">
-              <span className={`text-sm font-display font-semibold tracking-wider transition-colors duration-300 ${isScrolled ? 'text-brand-navy' : 'text-slate-100 md:text-white'}`}>
-                GILSON RUJANOWSKY
+          {/* Top level row: Branding & Side Action */}
+          <div className="w-full flex items-center justify-between lg:grid lg:grid-cols-3">
+            {/* Left Column - Brand Name and Title */}
+            <div className="hidden md:flex flex-col select-none text-left justify-center">
+              <span className="text-xs lg:text-sm font-display font-bold tracking-wider text-white uppercase">
+                Gilson Rujanowsky
               </span>
-              <span className="text-[10px] font-sans font-medium tracking-widest text-brand-gold">
-                CONSULTOR IMOBILIÁRIO • CRECI 28586 F
+              <span className="text-[9px] lg:text-[10px] font-sans font-medium tracking-widest text-brand-gold mt-0.5 uppercase">
+                Consultor Imobiliário • CRECI 28586 F
               </span>
             </div>
-          </a>
 
-          {/* Desktop Navigation Link Items */}
-          <nav className="hidden lg:flex items-center gap-7">
+            {/* Center Column - Brand Logo */}
+            <div className="flex justify-center items-center w-full lg:w-auto">
+              <a 
+                href="#inicio" 
+                aria-label="Ir para o topo da página do portal de Gilson Rujanowsky"
+                className="flex items-center justify-center focus:outline-2 focus:outline-brand-gold focus:outline-offset-4 rounded-md"
+              >
+                <img 
+                  src="https://i.postimg.cc/bY2sgdjz/Whats-App-Image-2.png" 
+                  alt="Logotipo de Gilson Luis Rujanowsky Consultoria Imobiliária"
+                  className="h-11 sm:h-13 md:h-15 lg:h-17 w-auto object-contain transition-transform duration-300 hover:scale-102"
+                  referrerPolicy="no-referrer"
+                  decoding="async"
+                />
+              </a>
+            </div>
+
+            {/* Right Column - CTA Button (Desktop only) */}
+            <div className="hidden lg:flex justify-end items-center">
+              <a
+                href="https://wa.me/5547997321808?text=Ol%C3%A1%20Gilson!%20Vim%20pelo%20site%20e%20tenho%20interesse%20em%20um%20im%C3%B3vel%20no%20litoral%20norte%20catarinense.%20Poderiam%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Iniciar consulta direta com Gilson no WhatsApp"
+                className="inline-flex items-center gap-2 bg-brand-rust hover:bg-brand-rust/90 text-white font-sans font-semibold text-[11px] px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-200 active:scale-95 focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 uppercase tracking-widest"
+              >
+                <PhoneCall size={12} />
+                <span>Fale Conosco</span>
+              </a>
+            </div>
+
+            {/* Mobile menu button toggle on the right */}
+            <div className="lg:hidden absolute right-0 top-1/2 -translate-y-1/2 flex items-center">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                aria-expanded={isOpen}
+                aria-label="Abrir ou fechar menu de navegação responsivo"
+                className="p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-gold text-white hover:text-brand-rust transition-colors"
+              >
+                {isOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
+          </div>
+
+          {/* Bottom level row: Navigation links list (Desktop only) */}
+          <nav className="hidden lg:flex items-center gap-8 mt-3 pt-3 border-t border-white/10 w-full justify-center text-[11px] font-bold uppercase tracking-[0.2em]">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 aria-label={link.label}
-                className={`text-sm font-sans font-medium transition-colors duration-200 hover:text-brand-gold focus:outline-2 focus:outline-brand-gold focus:outline-offset-4 rounded ${
-                  isScrolled 
-                    ? 'text-slate-700 hover:text-brand-navy' 
-                    : 'text-slate-200 hover:text-white'
-                }`}
+                className="text-slate-200 hover:text-brand-rust transition-colors duration-200 focus:outline-2 focus:outline-brand-gold focus:outline-offset-4 rounded"
               >
                 {link.name}
               </a>
             ))}
           </nav>
-
-          {/* Call To Action Rightside Button */}
-          <div className="hidden sm:block">
-            <a
-              href="https://wa.me/5547997321808"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Iniciar consulta direta com Gilson no WhatsApp"
-              className="inline-flex items-center gap-2 bg-brand-rust hover:bg-brand-rust/90 text-white font-sans font-medium text-sm px-4 py-2.5 rounded-lg shadow-sm hover:shadow transition-all duration-200 active:scale-95 focus:ring-2 focus:ring-brand-gold focus:ring-offset-2"
-            >
-              <PhoneCall size={16} />
-              <span>Fale Conosco</span>
-            </a>
-          </div>
-
-          {/* Mobile menu button toggle */}
-          <div className="lg:hidden flex items-center">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              aria-expanded={isOpen}
-              aria-label="Abrir ou fechar menu de navegação responsivo"
-              className={`p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-gold ${isScrolled ? 'text-brand-navy' : 'text-white'}`}
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
 
         </div>
       </div>
@@ -140,7 +142,7 @@ export default function Header() {
               ))}
               <div className="pt-4 px-3">
                 <a
-                  href="https://wa.me/5547997321808"
+                  href="https://wa.me/5547997321808?text=Ol%C3%A1%20Gilson!%20Vim%20pelo%20site%20e%20tenho%20interesse%20em%20um%20im%C3%B3vel%20no%20litoral%20norte%20catarinense.%20Poderiam%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Iniciar conversa com Gilson no WhatsApp"

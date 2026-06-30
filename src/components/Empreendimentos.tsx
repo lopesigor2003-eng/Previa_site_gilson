@@ -130,7 +130,7 @@ export default function Empreendimentos() {
                 </a>
 
                 <a
-                  href={`https://wa.me/5547997321808?text=Olá%20Gilson,%20gostaria%20de%20receber%20detalhes%20sobre%20o%20${encodeURIComponent(dev.title)}%20no%20Litoral%20Norte.`}
+                  href="https://wa.me/5547997321808?text=Ol%C3%A1%20Gilson!%20Vim%20pelo%20site%20e%20tenho%20interesse%20em%20um%20im%C3%B3vel%20no%20litoral%20norte%20catarinense.%20Poderiam%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`Conversar sobre ${dev.title} no WhatsApp`}
@@ -157,7 +157,7 @@ export default function Empreendimentos() {
             </div>
           </div>
           <a
-            href="https://wa.me/5547997321808?text=Olá%20Gilson,%20gostaria%20de%20receber%20a%20lista%20de%20tabelas%20de%20preços%20atualizadas%20das%20incorporadoras%20locais."
+            href="https://wa.me/5547997321808?text=Ol%C3%A1%20Gilson!%20Vim%20pelo%20site%20e%20tenho%20interesse%20em%20um%20im%C3%B3vel%20no%20litoral%20norte%20catarinense.%20Poderiam%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Solicitar lista de preços exclusivos"

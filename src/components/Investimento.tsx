@@ -223,7 +223,7 @@ export default function Investimento() {
                   *Este cálculo é uma simulação matemática estimando juros compostos de valorização patrimonial no litoral.
                 </p>
                 <a
-                  href={`https://wa.me/5547997321808?text=Olá%20Gilson,%20utilizei%20seu%20simulador%20imobiliário%20e%20gostaria%20de%20analisar%20imóveis%20de%20R$%20${propertyValue/1000}k%20na%20região.`}
+                  href="https://wa.me/5547997321808?text=Ol%C3%A1%20Gilson!%20Vim%20pelo%20site%20e%20tenho%20interesse%20em%20um%20im%C3%B3vel%20no%20litoral%20norte%20catarinense.%20Poderiam%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-1.5 bg-brand-gold hover:bg-brand-gold-dark text-brand-navy font-display font-semibold text-xs py-2.5 px-4 rounded-lg shadow-sm hover:shadow active:scale-97 transition-all duration-200"

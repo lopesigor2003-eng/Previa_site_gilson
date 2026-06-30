@@ -24,8 +24,8 @@ export default function Footer() {
             <div>
               <div className="flex items-center gap-3 mb-6 bg-white w-fit px-3 py-2 rounded shadow-sm select-none">
                 <img 
-                  src="https://i.postimg.cc/25psSkYF/Whats-App-Image-2026-06-11-at-16-11-28.jpg" 
-                  alt="Logotipo de Gilson Luiz Rujanowsky Consultoria Imobiliária"
+                  src="https://i.postimg.cc/bY2sgdjz/Whats-App-Image-2.png" 
+                  alt="Logotipo de Gilson Luis Rujanowsky Consultoria Imobiliária"
                   className="h-10 w-auto object-contain"
                   loading="lazy"
                   decoding="async"
@@ -33,7 +33,7 @@ export default function Footer() {
               </div>
 
               <h3 className="text-white font-display font-semibold text-lg uppercase tracking-wider mb-2">
-                Gilson Luiz Rujanowsky
+                Gilson Luis Rujanowsky
               </h3>
               
               <span className="text-brand-gold text-xs font-semibold tracking-widest block mb-4">
@@ -93,7 +93,7 @@ export default function Footer() {
                 <li className="flex items-center gap-2.5">
                   <PhoneCall size={14} className="text-brand-gold" />
                   <a 
-                    href="https://wa.me/5547997321808" 
+                    href="https://wa.me/5547997321808?text=Ol%C3%A1%20Gilson!%20Vim%20pelo%20site%20e%20tenho%20interesse%20em%20um%20im%C3%B3vel%20no%20litoral%20norte%20catarinense.%20Poderiam%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="hover:text-brand-gold hover:underline transition-all"
@@ -153,7 +153,7 @@ export default function Footer() {
       <div className="bg-slate-950 py-6 border-t border-slate-800/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
           <span>
-            © 2026 Gilson Luiz Rujanowsky. Todos os direitos reservados.
+            © 2026 Gilson Luis Rujanowsky. Todos os direitos reservados.
           </span>
           <div className="flex gap-4 font-sans text-slate-500 font-light">
             <span>Desenvolvido com Alto Padrão de Engenharia</span>

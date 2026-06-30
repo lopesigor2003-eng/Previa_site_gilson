@@ -58,7 +58,7 @@ export default function Oportunidades() {
                 Comprar um imóvel vai muito além de uma negociação. É uma decisão que envolve patrimônio, qualidade de vida e futuro.
               </p>
               <p>
-                Com profundo conhecimento do mercado imobiliário do litoral norte de Santa Catarina e mais de 13 anos acompanhando o desenvolvimento da região, Gilson Luiz Rujanowsky auxilia clientes a encontrar imóveis com real potencial de valorização, seja para moradia ou investimento.
+                Com profundo conhecimento do mercado imobiliário do litoral norte de Santa Catarina e mais de 13 anos acompanhando o desenvolvimento da região, Gilson Luis Rujanowsky auxilia clientes a encontrar imóveis com real potencial de valorização, seja para moradia ou investimento.
               </p>
               <p className="border-l-4 border-brand-gold pl-4 italic text-slate-500 text-sm">
                 Atendimento próximo, transparência e orientação baseada em experiência prática de quem também investe na região.
@@ -98,7 +98,7 @@ export default function Oportunidades() {
                 Está buscando uma oportunidade sob medida? Fale agora com Gilson.
               </div>
               <a 
-                href="https://wa.me/5547997321808" 
+                href="https://wa.me/5547997321808?text=Ol%C3%A1%20Gilson!%20Vim%20pelo%20site%20e%20tenho%20interesse%20em%20um%20im%C3%B3vel%20no%20litoral%20norte%20catarinense.%20Poderiam%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="Pedir recomendação de imóvel no WhatsApp"

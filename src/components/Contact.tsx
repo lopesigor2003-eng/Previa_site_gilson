@@ -20,7 +20,7 @@ export default function Contact() {
     e.preventDefault();
     if (!name.trim()) return;
 
-    const baseMessage = `Olá Gilson, meu nome é ${name}. Usei o portal consultivo e gostaria de falar sobre imóveis no Litoral Norte Catarinense.`;
+    const baseMessage = `Olá Gilson! Vim pelo site e tenho interesse em um imóvel no litoral norte catarinense. Poderiam me passar mais informações? Meu nome é ${name}.`;
     const goalText = goal === 'investir' ? 'Investimento com Valorização' : goal === 'morar' ? 'Moradia/Residência' : 'Construção Exclusiva';
     const cityText = `Minha cidade de preferência é ${city}.`;
     const customMessage = message.trim() ? `\n\nMensagem Adicional: "${message}"` : '';
@@ -80,7 +80,7 @@ export default function Contact() {
                 <div>
                   <span className="text-xs text-slate-400 block font-sans">Especialista Direto (WhatsApp)</span>
                   <a 
-                    href="https://wa.me/5547997321808" 
+                    href="https://wa.me/5547997321808?text=Ol%C3%A1%20Gilson!%20Vim%20pelo%20site%20e%20tenho%20interesse%20em%20um%20im%C3%B3vel%20no%20litoral%20norte%20catarinense.%20Poderiam%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" 
                     className="text-white hover:text-brand-gold font-sans font-medium transition-colors text-sm sm:text-base"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -119,7 +119,7 @@ export default function Contact() {
             {/* Direct immediate WhatsApp button as exact match alternative */}
             <div className="mt-10">
               <a
-                href="https://wa.me/5547997321808"
+                href="https://wa.me/5547997321808?text=Ol%C3%A1%20Gilson!%20Vim%20pelo%20site%20e%20tenho%20interesse%20em%20um%20im%C3%B3vel%20no%20litoral%20norte%20catarinense.%20Poderiam%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Fale com Gilson no WhatsApp"

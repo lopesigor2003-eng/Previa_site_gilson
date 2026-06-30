@@ -92,12 +92,12 @@ export default function About() {
               Credibilidade & Competência
             </span>
             <h2 className="text-3xl sm:text-4xl font-display font-bold text-brand-navy mb-6 leading-tight">
-              Conheça Gilson Luiz Rujanowsky
+              Conheça Gilson Luis Rujanowsky
             </h2>
             
             <div className="space-y-5 text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
               <p>
-                Apaixonado pelo mercado imobiliário e pelo potencial de crescimento do litoral norte catarinense, Gilson Luiz Rujanowsky atua auxiliando clientes na compra e venda de imóveis com foco em segurança, valorização e boas oportunidades.
+                Apaixonado pelo mercado imobiliário e pelo potencial de crescimento do litoral norte catarinense, Gilson Luis Rujanowsky atua auxiliando clientes na compra e venda de imóveis com foco em segurança, valorização e boas oportunidades.
               </p>
               <p>
                 Formado em Administração e pós-graduado em Logística, combina visão estratégica, análise de mercado e atendimento personalizado para ajudar cada cliente a tomar decisões com confiança.
