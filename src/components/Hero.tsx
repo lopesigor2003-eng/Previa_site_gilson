@@ -55,12 +55,11 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             {/* Centered logo above the CRECI certification badge */}
-            <div className="flex justify-center mb-6 select-none w-full">
+            <div className="flex justify-center mb-6 select-none w-full px-4">
               <img 
                 src="https://i.postimg.cc/2jsRdSzz/12313.png" 
                 alt="Logotipo Gilson Luis Rujanowsky"
-                className="object-contain"
-                style={{ marginLeft: '-534px', width: '450px', height: '257px', paddingLeft: '-2px', marginTop: '-48px' }}
+                className="w-full max-w-[280px] sm:max-w-[340px] md:max-w-[400px] lg:max-w-[450px] h-auto object-contain mx-auto"
                 referrerPolicy="no-referrer"
                 decoding="async"
               />
