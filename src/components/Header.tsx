@@ -65,7 +65,7 @@ export default function Header() {
                 className="flex items-center justify-center focus:outline-2 focus:outline-brand-gold focus:outline-offset-4 rounded-md"
               >
                 <img 
-                  src="https://i.postimg.cc/bY2sgdjz/Whats-App-Image-2.png" 
+                  src="https://i.postimg.cc/2jsRdSzz/12313.png" 
                   alt="Logotipo de Gilson Luis Rujanowsky Consultoria Imobiliária"
                   className="h-11 sm:h-13 md:h-15 lg:h-17 w-auto object-contain transition-transform duration-300 hover:scale-102"
                   referrerPolicy="no-referrer"
@@ -126,16 +126,16 @@ export default function Header() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden glass-panel border-b border-slate-200 mt-2 shadow-xl absolute top-full left-0 right-0 overflow-hidden"
+            className="lg:hidden glass-panel-dark border-b border-white/15 shadow-2xl absolute top-full left-0 right-0 overflow-hidden"
           >
-            <div className="px-4 pt-3 pb-6 space-y-2">
+            <div className="px-4 pt-3 pb-6 space-y-2 bg-brand-navy/98 backdrop-blur-lg">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   aria-label={link.label}
-                  className="block text-base font-sans font-medium text-brand-navy hover:text-brand-gold py-2.5 px-3 rounded-lg hover:bg-slate-50 transition-colors"
+                  className="block text-base font-sans font-medium text-slate-100 hover:text-brand-rust py-2.5 px-3 rounded-lg hover:bg-white/5 transition-all"
                 >
                   {link.name}
                 </a>
@@ -146,7 +146,7 @@ export default function Header() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Iniciar conversa com Gilson no WhatsApp"
-                  className="w-full flex items-center justify-center gap-2 bg-brand-rust hover:bg-opacity-95 text-white font-medium py-3 rounded-xl shadow-md transition-all active:scale-95"
+                  className="w-full flex items-center justify-center gap-2 bg-brand-rust hover:bg-brand-rust/90 text-white font-medium py-3 rounded-xl shadow-md transition-all active:scale-95"
                 >
                   <PhoneCall size={18} />
                   <span>Consultoria Comercial no WhatsApp</span>
