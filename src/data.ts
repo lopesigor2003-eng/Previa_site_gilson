@@ -7,40 +7,40 @@ import { Development, CityInfo, Advantage } from './types';
 
 export const DEVELOPMENTS: Development[] = [
   {
-    id: 'residencial-exclusive',
-    title: 'Residencial Exclusive',
-    tagline: 'Sofisticação e Alto Padrão Frente Mar',
-    description: 'Um projeto projetado para quem busca exclusividade e conexão direta com a natureza do litoral norte catarinense. Sinta a brisa do oceano em amplas suítes com acabamentos de altíssimo padrão.',
+    id: 'poema-balneario-picarras',
+    title: 'Poema',
+    tagline: 'Sofisticação e Conexão Frente Mar',
+    description: 'Um empreendimento exclusivo que traduz a harmonia do oceano em forma de arquitetura. Desfrute de momentos inesquecíveis em amplas suítes com acabamento impecável e uma das vistas definitivas mais deslumbrantes do litoral norte catarinense.',
     city: 'Balneário Piçarras',
     features: [
       'Apartamentos de 3 e 4 suítes',
       'Vista panorâmica definitiva para o mar',
-      'Área de lazer gourmet completa estilo clube',
-      'Acabamento em porcelanato e gesso rebaixado'
+      'Área de lazer de altíssimo padrão estilo resort',
+      'Arquitetura contemporânea de altíssimo luxo'
     ],
-    pdfUrl: 'https://drive.google.com/file/d/1DYYgN2-Wy1zdhaR5I1e7vTqHas8xP7Gz/view?usp=sharing',
+    pdfUrl: 'https://drive.google.com/file/d/1o8zhIo03wigvYN4JCmNL2XmvuWTnsooU/view?usp=sharing',
     status: 'Lançamento',
     highlightMetric: 'Frente Mar',
     highlightLabel: 'Exclusividade',
-    coverImage: 'https://i.postimg.cc/sD0YSmTX/residencial-excl.png'
+    coverImage: 'https://i.postimg.cc/FzrMLRtz/poema.png'
   },
   {
-    id: 'insisa-san-andreas',
-    title: 'Insisa - San Andreas',
-    tagline: 'Modernidade e Alto Potencial de Rentabilidade',
-    description: 'Arquitetura cosmopolita planejada de modo estratégico para investidores. Infraestrutura completa de segurança e automação residencial, garantindo máxima valorização imobiliária em região com altíssima demanda turística.',
-    city: 'Penha',
+    id: 'aurun-invest-living',
+    title: 'Aurun Invest Living',
+    tagline: 'Modernidade e Rentabilidade Inteligente',
+    description: 'Um projeto sofisticado planejado para quem busca valorização patrimonial e excelente retorno com locação. Oferece plantas inteligentes com alto padrão de acabamento e uma localização estratégica em Barra Velha.',
+    city: 'Barra Velha',
     features: [
-      'Plantas modernas de 2 e 3 dormitórios',
-      'A poucos minutos do Beto Carrero World',
-      'Rooftop com piscina e bar panorâmico',
-      'Baixo custo de condomínio e ótima liquidez'
+      'Apartamentos modernos e estúdios planejados',
+      'Localização estratégica de altíssima valorização',
+      'Rooftop exclusivo com lazer completo e piscina',
+      'Baixo custo de manutenção e excelente potencial de liquidez'
     ],
-    pdfUrl: 'https://drive.google.com/file/d/1SSqJksZs47SlJU5KTbm3dxy6j3-3zbgd/view?usp=sharing',
-    status: 'Em Obras',
-    highlightMetric: 'Alto ROI',
-    highlightLabel: 'Próximo ao Mar',
-    coverImage: 'https://i.postimg.cc/zXPCW7xx/sa.png'
+    pdfUrl: 'https://drive.google.com/file/d/1-F-aWDuYl71nvZL15KW6UokvEJ6DvQ8t/view?usp=sharing',
+    status: 'Lançamento',
+    highlightMetric: 'Invest Living',
+    highlightLabel: 'Barra Velha',
+    coverImage: 'https://i.postimg.cc/h4MWq9mH/aurun.png'
   },
   {
     id: 'orla-da-barra',

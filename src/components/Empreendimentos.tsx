@@ -6,7 +6,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { DEVELOPMENTS } from '../data';
-import { FileText, ArrowUpRight, CheckCircle2, MapPin, Building } from 'lucide-react';
+import { FileText, ArrowUpRight, CheckCircle2, MapPin, Building, MessageSquare } from 'lucide-react';
 
 export default function Empreendimentos() {
   return (
@@ -165,6 +165,73 @@ export default function Empreendimentos() {
           >
             <span>Solicitar Tabelas de Preços</span>
           </a>
+        </div>
+
+        {/* Imóveis na Planta e Prontos Section */}
+        <div className="mt-8 p-8 bg-white border border-slate-100 rounded-2xl flex flex-col gap-6 shadow-sm">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 divide-y md:divide-y-0 md:divide-x divide-slate-100">
+            
+            {/* Imóveis na Planta */}
+            <div className="pb-6 md:pb-0 md:pr-8">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-amber-50 text-amber-800 text-[10px] font-sans font-bold uppercase tracking-wider rounded-full mb-3">
+                🔑 Alta Valorização
+              </span>
+              <h4 className="font-display font-bold text-brand-navy text-base sm:text-lg mb-2">Imóveis na Planta</h4>
+              <p className="text-xs sm:text-sm text-slate-500 font-sans leading-relaxed mb-4">
+                Condições exclusivas de lançamento. Invista com fluxo de pagamento facilitado direto com as construtoras mais sólidas do litoral catarinense e garanta máxima valorização.
+              </p>
+              <ul className="space-y-1.5">
+                <li className="flex items-center gap-2 text-xs text-slate-600 font-sans">
+                  <CheckCircle2 size={13} className="text-brand-gold shrink-0" />
+                  <span>Tabelas de pré-lançamento exclusivas</span>
+                </li>
+                <li className="flex items-center gap-2 text-xs text-slate-600 font-sans">
+                  <CheckCircle2 size={13} className="text-brand-gold shrink-0" />
+                  <span>Fluxo de parcelas altamente flexível</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Imóveis Prontos */}
+            <div className="pt-6 md:pt-0 md:pl-8">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-emerald-50 text-emerald-800 text-[10px] font-sans font-bold uppercase tracking-wider rounded-full mb-3">
+                🏡 Pronto para Morar
+              </span>
+              <h4 className="font-display font-bold text-brand-navy text-base sm:text-lg mb-2">Imóveis Prontos</h4>
+              <p className="text-xs sm:text-sm text-slate-500 font-sans leading-relaxed mb-4">
+                Excelente opção para moradia imediata ou rentabilização ágil com locação de temporada nas praias que mais crescem no Brasil.
+              </p>
+              <ul className="space-y-1.5">
+                <li className="flex items-center gap-2 text-xs text-slate-600 font-sans">
+                  <CheckCircle2 size={13} className="text-brand-gold shrink-0" />
+                  <span>Vistoriados, decorados ou semi-mobiliados</span>
+                </li>
+                <li className="flex items-center gap-2 text-xs text-slate-600 font-sans">
+                  <CheckCircle2 size={13} className="text-brand-gold shrink-0" />
+                  <span>Garantia de entrega imediata e liquidez</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          {/* WhatsApp Action Button */}
+          <div className="border-t border-slate-100 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="text-center sm:text-left">
+              <p className="text-xs font-sans font-semibold text-slate-700">Gostaria de analisar as melhores opções de imóveis prontos ou na planta?</p>
+              <p className="text-[11px] font-sans text-slate-400">Atendimento personalizado pelo WhatsApp para as cidades de Piçarras, Barra Velha, Penha e região.</p>
+            </div>
+            <a
+              href="https://wa.me/5547997321808?text=Ol%C3%A1%20Gilson!%20Vim%20pelo%20site%20e%20tenho%20interesse%20em%20saber%20mais%20sobre%20as%20op%C3%A7%C3%B5es%20de%20im%C3%B3veis%20na%20planta%20e%20im%C3%B3veis%20prontos%20no%20litoral."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chamar Gilson no WhatsApp para consultar imóveis prontos ou na planta"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA5A] text-white font-sans font-bold text-xs py-3 px-5 rounded-xl transition-all duration-200 active:scale-95 shadow-sm hover:shadow"
+            >
+              <MessageSquare size={14} className="fill-white" />
+              <span>Fale Conosco no WhatsApp</span>
+            </a>
+          </div>
         </div>
 
       </div>

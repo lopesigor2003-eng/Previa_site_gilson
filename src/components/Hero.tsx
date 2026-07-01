@@ -71,15 +71,9 @@ export default function Hero() {
             </div>
 
             {/* Main title h1 */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
-              Gilson Luis <br className="hidden sm:inline" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-rust via-brand-rust to-brand-gold">
-                Rujanowsky
-              </span>
-            </h1>
-            <h2 className="text-xl sm:text-2xl font-display font-medium text-slate-200 mb-4 tracking-wide max-w-2xl mx-auto">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
               Seu Especialista Imobiliário no Litoral Norte Catarinense
-            </h2>
+            </h1>
 
             {/* Subtitle */}
             <p className="text-lg md:text-xl text-slate-300 font-sans font-light leading-relaxed mb-8 max-w-2xl mx-auto">
